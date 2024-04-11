@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(45, 68, 110);
+}
+#container{
+    height: 400px;
+    width: 300px;
+    background-color:white;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    
+    
+}
+
+#container img{
+    height: 400px;
+    width: 300px;
+    border-radius: 50px;
+    object-fit: cover;
+    
+}
+
+#container i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    font-size: 65px;
+    color: rgb(255, 255, 255);
+    transition: transform ease 0.5s;
+    
+}
